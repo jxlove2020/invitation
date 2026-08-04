@@ -33,8 +33,8 @@
 
     body {
       background:
-        radial-gradient(ellipse 100% 60% at 50% 0%, rgba(74,138,200,0.45) 0%, transparent 65%),
-        linear-gradient(180deg, #162840 0%, #1E3A60 100%);
+        radial-gradient(ellipse 100% 60% at 50% 0%, rgba(100,175,230,0.4) 0%, transparent 65%),
+        linear-gradient(180deg, #2558A8 0%, #4A8AC8 100%);
       font-family: var(--font-serif);
       min-height: 100vh;
       display: flex;
@@ -60,7 +60,7 @@
 
     /* ── 헤더 ── */
     .header {
-      background: linear-gradient(170deg, #1A2E44 0%, #2B5F96 55%, #3A7FBF 100%);
+      background: linear-gradient(170deg, #1B5298 0%, #2E82D0 45%, #4FAEDD 75%, #7CC5E8 100%);
       padding: 48px 28px 56px;
       text-align: center;
       position: relative;
@@ -68,7 +68,7 @@
     }
     .header-bg { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
 
-    .header-lily { position: absolute; bottom: 0; width: 138px; height: 175px; opacity: 0.27; pointer-events: none; }
+    .header-lily { position: absolute; bottom: 0; width: 138px; height: 175px; opacity: 0.5; pointer-events: none; filter: sepia(1) hue-rotate(5deg) saturate(2.5) brightness(1.4); }
     .header-lily--left  { left: -8px; }
     .header-lily--right { right: -8px; transform: scaleX(-1); }
 
