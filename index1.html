@@ -1,0 +1,903 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <title>임직식 초대장 | 꿈과사랑의교회</title>
+    <meta name="description" content="2026년 9월 5일(토) 오전 11시 · 경기도 성남시 분당구 발이봉남로 4번길 12" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="꿈과사랑의교회 임직식 초대장" />
+    <meta property="og:description" content="2026년 9월 5일(토) 오전 11시 · 경기도 성남시 분당구 발이봉남로 4번길 12" />
+    <meta property="og:image" content="https://jxlove2020.github.io/invitation/images/image1.png" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;700&family=Nanum+Brush+Script&display=swap');
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      :root {
+        --page: #eaf4fb;
+        --card: #ffffff;
+        --violet: #5e3a9a;
+        --violet2: #8260c0;
+        --sky: #4a88c8;
+        --green: #4e8a40;
+        --text: #28203a;
+        --soft: #5a5e78;
+        --pale: #9498b0;
+        --line: #e8ecf4;
+        --pink: #d8a0c4;
+        --tint: #f2f7fc;
+        --font-serif: 'Noto Serif KR', serif;
+        --font-sans: 'Noto Sans KR', sans-serif;
+        --font-brush: 'Nanum Brush Script', cursive;
+      }
+
+      body {
+        background: var(--page);
+        font-family: var(--font-serif);
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 28px 16px 100px;
+      }
+
+      @keyframes cardIn {
+        from {
+          opacity: 0;
+          transform: translateY(28px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .card {
+        width: 100%;
+        max-width: 440px;
+        background: var(--card);
+        border-radius: 16px;
+        overflow: hidden;
+        box-shadow:
+          0 16px 72px rgba(80, 100, 160, 0.18),
+          0 4px 20px rgba(0, 0, 0, 0.08);
+        animation: cardIn 0.8s cubic-bezier(0.22, 1, 0.36, 1) both;
+      }
+
+      /* ── 헤더: 꽃 그라디언트 + 원형 화환 ── */
+      .header {
+        background:
+          radial-gradient(ellipse 65% 55% at 50% 52%, rgba(255, 255, 255, 0.6) 0%, transparent 68%),
+          linear-gradient(
+            148deg,
+            #ffd0e8 0%,
+            #eccde8 18%,
+            #c8d6f4 36%,
+            #d4e8f8 52%,
+            #e0ccf0 68%,
+            #f4c8e0 84%,
+            #ffd0e8 100%
+          );
+        padding: 44px 24px 48px;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+      }
+
+      /* 코너 장식: 꽃 분위기 얼룩 */
+      .header::before {
+        content: '';
+        position: absolute;
+        width: 160px;
+        height: 110px;
+        background: radial-gradient(ellipse, rgba(220, 80, 160, 0.28), transparent 70%);
+        top: -30px;
+        right: -20px;
+        transform: rotate(-25deg);
+        pointer-events: none;
+      }
+      .header::after {
+        content: '';
+        position: absolute;
+        width: 140px;
+        height: 90px;
+        background: radial-gradient(ellipse, rgba(200, 60, 150, 0.22), transparent 70%);
+        bottom: 0px;
+        left: -20px;
+        transform: rotate(15deg);
+        pointer-events: none;
+      }
+
+      .header-invite {
+        font-family: var(--font-brush);
+        font-size: clamp(40px, 12vw, 52px);
+        color: var(--green);
+        letter-spacing: 4px;
+        margin-bottom: 20px;
+        position: relative;
+        z-index: 2;
+        text-shadow: 0 1px 12px rgba(255, 255, 255, 0.9);
+      }
+
+      /* 흰 원형 타이틀 패널 */
+      .hero-circle {
+        width: min(270px, 72vw);
+        height: min(270px, 72vw);
+        background: rgba(255, 255, 255, 0.92);
+        border-radius: 50%;
+        border: 1.5px dashed var(--pink);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        padding: clamp(20px, 6vw, 30px) clamp(16px, 5vw, 24px);
+        position: relative;
+        z-index: 2;
+        backdrop-filter: blur(6px);
+      }
+      .circle-church {
+        font-family: var(--font-serif);
+        font-size: clamp(14px, 4.2vw, 18px);
+        font-weight: 500;
+        color: var(--violet2);
+        letter-spacing: 1px;
+        margin-bottom: clamp(5px, 1.5vw, 8px);
+      }
+      .circle-rule {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: clamp(5px, 1.5vw, 8px);
+      }
+      .circle-rule-line {
+        display: block;
+        width: 26px;
+        height: 1px;
+        background: var(--pink);
+        opacity: 0.65;
+      }
+      .circle-rule-dot {
+        width: 4px;
+        height: 4px;
+        background: var(--pink);
+        border-radius: 50%;
+      }
+      .circle-positions {
+        font-family: var(--font-sans);
+        font-size: clamp(12px, 3.4vw, 15px);
+        font-weight: 400;
+        color: var(--violet2);
+        letter-spacing: 1px;
+        margin-bottom: clamp(5px, 1.5vw, 8px);
+      }
+      .circle-title {
+        font-family: var(--font-serif);
+        font-size: clamp(28px, 8.5vw, 38px);
+        font-weight: 700;
+        color: var(--violet);
+        letter-spacing: 4px;
+        line-height: 1;
+      }
+      .circle-title-en {
+        font-family: var(--font-sans);
+        font-size: clamp(7px, 2vw, 9px);
+        font-weight: 300;
+        color: var(--pale);
+        letter-spacing: 5px;
+        margin-top: clamp(6px, 2vw, 10px);
+      }
+
+      /* ── 공통 섹션 레이블 ── */
+      .section-heading {
+        font-family: var(--font-sans);
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 5px;
+        color: var(--pale);
+        text-align: center;
+        margin-bottom: 28px;
+      }
+
+      /* ── 초대 메시지 ── */
+      .message-section {
+        padding: 44px 36px;
+        text-align: center;
+        border-bottom: 1px solid var(--line);
+      }
+      .message-text {
+        font-size: 20px;
+        line-height: 2.3;
+        color: var(--soft);
+        font-weight: 300;
+        word-break: keep-all;
+      }
+      .message-text strong {
+        color: var(--text);
+        font-weight: 600;
+      }
+
+      /* ── 말씀 구절 ── */
+      .verse-section {
+        background: var(--tint);
+        padding: 36px;
+        text-align: center;
+        border-bottom: 1px solid var(--line);
+      }
+      .verse-mark {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+      }
+      .verse-mark--top {
+        margin-bottom: 20px;
+      }
+      .verse-mark--bot {
+        margin-top: 20px;
+      }
+      .verse-mark-line {
+        display: block;
+        width: 22px;
+        height: 1px;
+        background: var(--sky);
+        opacity: 0.4;
+      }
+      .verse-mark-diamond {
+        width: 5px;
+        height: 5px;
+        background: var(--sky);
+        opacity: 0.6;
+        transform: rotate(45deg);
+        flex-shrink: 0;
+      }
+      .verse-text {
+        font-size: 19px;
+        color: var(--text);
+        line-height: 2.2;
+        margin-bottom: 12px;
+        font-weight: 400;
+        word-break: keep-all;
+      }
+      .verse-ref {
+        font-family: var(--font-sans);
+        font-size: 15px;
+        color: var(--sky);
+        letter-spacing: 2px;
+      }
+
+      /* ── 예식 안내 ── */
+      .info-section {
+        padding: 40px 32px;
+        border-bottom: 1px solid var(--line);
+      }
+      .info-list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+      .info-list-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 14px;
+      }
+      .info-dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: var(--violet);
+        flex-shrink: 0;
+        margin-top: 10px;
+      }
+      .info-list-label {
+        font-family: var(--font-sans);
+        font-size: 11px;
+        font-weight: 500;
+        color: var(--pale);
+        letter-spacing: 3px;
+        margin-bottom: 4px;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+      }
+      .info-list-value {
+        font-size: 24px;
+        font-weight: 600;
+        color: var(--text);
+        line-height: 1.35;
+      }
+      .info-list-sub {
+        font-family: var(--font-sans);
+        font-size: 16px;
+        color: var(--soft);
+        margin-top: 4px;
+        line-height: 1.7;
+        word-break: keep-all;
+      }
+      .dday-badge {
+        display: inline-block;
+        font-family: var(--font-sans);
+        font-size: 10px;
+        font-weight: 700;
+        color: #ffffff;
+        background: var(--violet);
+        padding: 2px 8px;
+        border-radius: 20px;
+        letter-spacing: 0.5px;
+        white-space: nowrap;
+      }
+
+      /* ── 오시는 길 ── */
+      .location-section {
+        padding: 40px 32px;
+        border-bottom: 1px solid var(--line);
+      }
+      .map-frame {
+        width: 100%;
+        height: 220px;
+        border-radius: 12px;
+        overflow: hidden;
+        margin-bottom: 16px;
+      }
+      .map-frame iframe {
+        width: 100%;
+        height: 100%;
+        border: 0;
+        display: block;
+      }
+      .map-address {
+        display: block;
+        font-family: var(--font-sans);
+        font-size: 18px;
+        color: var(--soft);
+        text-align: center;
+        line-height: 2;
+        margin-bottom: 16px;
+        text-decoration: none;
+      }
+      .map-address:active {
+        color: var(--sky);
+      }
+      .map-buttons {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        margin-bottom: 14px;
+      }
+      .map-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 7px;
+        padding: 16px 10px;
+        border-radius: 8px;
+        font-family: var(--font-sans);
+        font-size: 17px;
+        font-weight: 700;
+        text-decoration: none;
+        transition: opacity 0.2s;
+      }
+      .map-btn:active {
+        opacity: 0.75;
+      }
+      .map-btn svg {
+        width: 18px;
+        height: 18px;
+        flex-shrink: 0;
+      }
+      .map-btn--kakao {
+        background: #fee500;
+        color: #191919;
+      }
+      .map-btn--naver {
+        background: #03c75a;
+        color: #ffffff;
+      }
+      .parking-info {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        background: var(--tint);
+        border-radius: 8px;
+        padding: 14px 16px;
+      }
+      .parking-badge {
+        width: 32px;
+        height: 32px;
+        background: var(--sky);
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        color: white;
+        font-family: var(--font-sans);
+        font-size: 14px;
+        font-weight: 700;
+      }
+      .parking-text {
+        font-family: var(--font-sans);
+        font-size: 16px;
+        color: var(--soft);
+        line-height: 1.9;
+        word-break: keep-all;
+      }
+
+      /* ── 임직자 ── */
+      .officers-section {
+        background: var(--tint);
+        padding: 40px 20px 44px;
+        border-bottom: 1px solid var(--line);
+      }
+      .officers-section .section-heading {
+        margin-bottom: 16px;
+      }
+      .office-group {
+        margin-bottom: 14px;
+      }
+      .office-group:last-child {
+        margin-bottom: 0;
+      }
+      .office-title {
+        font-family: var(--font-sans);
+        font-size: 15px;
+        font-weight: 600;
+        letter-spacing: 5px;
+        color: var(--violet);
+        text-align: center;
+        padding: 14px 0;
+        border-top: 1px solid var(--line);
+        border-bottom: 1px solid var(--line);
+        margin-bottom: 10px;
+      }
+      .name-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px;
+      }
+      .name-badge {
+        font-family: var(--font-serif);
+        font-size: 25px;
+        font-weight: 500;
+        color: var(--text);
+        text-align: center;
+        padding: 17px 4px;
+        background: var(--card);
+        border-radius: 8px;
+      }
+      .name-grid--single {
+        display: flex;
+        justify-content: center;
+      }
+      .name-badge--single {
+        padding: 14px 52px;
+      }
+
+      /* ── 푸터 ── */
+      .footer {
+        background: var(--card);
+        padding: 36px 28px 28px;
+        text-align: center;
+      }
+      .footer-logo {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 14px;
+      }
+      .footer-logo img {
+        height: 46px;
+        width: auto;
+      }
+      .footer-divider {
+        height: 1px;
+        background: var(--line);
+        margin: 14px 0;
+      }
+      .footer-info {
+        font-family: var(--font-sans);
+        font-size: 15px;
+        color: var(--pale);
+        line-height: 2.2;
+      }
+      .footer-info a {
+        color: var(--soft);
+        text-decoration: none;
+      }
+      .footer-phone {
+        color: var(--soft);
+        text-decoration: none;
+        font-family: var(--font-sans);
+      }
+      .footer-phone:active {
+        opacity: 0.6;
+      }
+      .footer-copy {
+        font-family: var(--font-sans);
+        font-size: 10px;
+        color: var(--line);
+        letter-spacing: 2px;
+        margin-top: 14px;
+      }
+
+      /* ── 공유 버튼 ── */
+      .share-float {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 14px 20px 28px;
+        background: linear-gradient(transparent, rgba(100, 120, 180, 0.5) 40%);
+        display: flex;
+        justify-content: center;
+        z-index: 100;
+        pointer-events: none;
+      }
+      .share-btn {
+        pointer-events: all;
+        display: flex;
+        align-items: center;
+        gap: 9px;
+        background: #fee500;
+        color: #191919;
+        border: none;
+        border-radius: 28px;
+        padding: 16px 40px;
+        font-family: var(--font-sans);
+        font-size: 17px;
+        font-weight: 700;
+        cursor: pointer;
+        box-shadow: 0 4px 24px rgba(0, 0, 0, 0.25);
+        white-space: nowrap;
+        transition: transform 0.15s;
+      }
+      .share-btn:active {
+        transform: scale(0.97);
+      }
+      .share-btn svg {
+        width: 20px;
+        height: 20px;
+        flex-shrink: 0;
+      }
+
+      /* ── 토스트 ── */
+      .toast {
+        position: fixed;
+        bottom: 96px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: rgba(40, 32, 56, 0.92);
+        color: white;
+        font-family: var(--font-sans);
+        font-size: 14px;
+        padding: 10px 22px;
+        border-radius: 20px;
+        z-index: 200;
+        white-space: nowrap;
+      }
+      @keyframes toastIn {
+        from {
+          opacity: 0;
+          transform: translateX(-50%) translateY(8px);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(-50%) translateY(0);
+        }
+      }
+      .toast {
+        animation: toastIn 0.25s ease;
+      }
+
+      @media (max-width: 390px) {
+        .message-text {
+          font-size: 18px;
+        }
+        .info-list-value {
+          font-size: 21px;
+        }
+        .info-list-sub {
+          font-size: 15px;
+        }
+        .name-badge {
+          font-size: 20px;
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        * {
+          animation: none !important;
+          transition: none !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <!-- 헤더: 꽃 배경 + 원형 화환 -->
+      <div class="header">
+        <div class="header-invite">초 대 합 니 다</div>
+        <div class="hero-circle">
+          <div class="circle-church">꿈과사랑의교회</div>
+          <div class="circle-rule">
+            <span class="circle-rule-line"></span>
+            <span class="circle-rule-dot"></span>
+            <span class="circle-rule-line"></span>
+          </div>
+          <div class="circle-positions">장로 · 권사 · 안수집사</div>
+          <div class="circle-title">임직식</div>
+          <div class="circle-title-en">ORDINATION SERVICE</div>
+        </div>
+      </div>
+
+      <!-- 초대 메시지 -->
+      <div class="message-section">
+        <p class="message-text">
+          하나님의 크신 은혜 가운데<br />
+          <strong>꿈과사랑의교회</strong>에서<br />
+          귀한 임직식를 거행하게 되었습니다.<br /><br />
+          바쁘신 중에도 함께하시어<br />
+          하나님께 영광 돌리는<br />
+          이 자리를 빛내 주시기를<br />
+          정중히 초대합니다.
+        </p>
+      </div>
+
+      <!-- 말씀 구절 -->
+      <div class="verse-section">
+        <div class="verse-mark verse-mark--top">
+          <span class="verse-mark-line"></span>
+          <span class="verse-mark-diamond"></span>
+          <span class="verse-mark-line"></span>
+        </div>
+        <p class="verse-text">
+          누구든지 너희 중에 크고자 하는 자는<br />
+          너희를 섬기는 자가 되어야 하리라
+        </p>
+        <div class="verse-ref">마가복음 10:43</div>
+        <div class="verse-mark verse-mark--bot">
+          <span class="verse-mark-line"></span>
+          <span class="verse-mark-diamond"></span>
+          <span class="verse-mark-line"></span>
+        </div>
+      </div>
+
+      <!-- 예식 안내 -->
+      <div class="info-section">
+        <div class="section-heading">예 식 안 내</div>
+        <ul class="info-list">
+          <li class="info-list-item">
+            <span class="info-dot"></span>
+            <div>
+              <div class="info-list-label">
+                DATE
+                <span class="dday-badge" id="ddayCount"></span>
+              </div>
+              <div class="info-list-value">2026년 9월 5일</div>
+              <div class="info-list-sub">토요일 (Saturday)</div>
+            </div>
+          </li>
+
+          <li class="info-list-item">
+            <span class="info-dot"></span>
+            <div>
+              <div class="info-list-label">TIME</div>
+              <div class="info-list-value">오전 11시</div>
+              <div class="info-list-sub">예배 시작 10분 전 착석 부탁드립니다</div>
+            </div>
+          </li>
+
+          <li class="info-list-item">
+            <span class="info-dot"></span>
+            <div>
+              <div class="info-list-label">PLACE</div>
+              <div class="info-list-value">꿈과사랑의교회</div>
+              <div class="info-list-sub">본당</div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- 오시는 길 -->
+      <div class="location-section">
+        <div class="section-heading">오 시 는 길</div>
+
+        <div class="map-frame">
+          <iframe
+            src="https://maps.google.com/maps?q=%EA%B2%BD%EA%B8%B0%EB%8F%84+%EC%84%B1%EB%82%A8%EC%8B%9C+%EB%B6%84%EB%8B%B9%EA%B5%AC+%EB%B0%9C%EC%9D%B4%EB%B4%89%EB%82%A8%EB%A1%9C+4%EB%B2%88%EA%B8%B8+12&output=embed&hl=ko&z=17"
+            loading="lazy"
+            title="꿈과사랑의교회 위치"
+            allowfullscreen
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+
+        <a id="mapAddressLink" class="map-address"> 경기도 성남시 분당구<br />발이봉남로 4번길 12 </a>
+
+        <div class="map-buttons">
+          <a id="kakaoMapBtn" target="_blank" class="map-btn map-btn--kakao">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M12 2C6.48 2 2 5.58 2 10c0 2.67 1.49 5.02 3.8 6.54L4.8 20l4.1-1.8c.96.27 1.96.4 3.1.4 5.52 0 10-3.58 10-8S17.52 2 12 2z"
+                fill="#191919"
+              />
+            </svg>
+            카카오맵
+          </a>
+          <a id="naverMapBtn" target="_blank" class="map-btn map-btn--naver">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+                fill="white"
+              />
+            </svg>
+            네이버지도
+          </a>
+        </div>
+
+        <div class="parking-info">
+          <div class="parking-badge">P</div>
+          <div class="parking-text">
+            교회 주차장 이용 가능합니다<br />
+            대중교통 이용을 권장합니다
+          </div>
+        </div>
+      </div>
+
+      <!-- 임직 직분자 -->
+      <div class="officers-section">
+        <div class="section-heading">임 직 자</div>
+
+        <div class="office-group">
+          <div class="office-title">장 로</div>
+          <div class="name-grid name-grid--single">
+            <div class="name-badge name-badge--single">하철민</div>
+          </div>
+        </div>
+
+        <div class="office-group">
+          <div class="office-title">권 사</div>
+          <div class="name-grid">
+            <div class="name-badge">김경미</div>
+            <div class="name-badge">김현실</div>
+            <div class="name-badge">박미영</div>
+            <div class="name-badge">신미숙</div>
+            <div class="name-badge">유지선</div>
+            <div class="name-badge">이승민</div>
+            <div class="name-badge">이지은</div>
+            <div class="name-badge">정숙영</div>
+            <div class="name-badge">최미월</div>
+          </div>
+        </div>
+
+        <div class="office-group">
+          <div class="office-title">안 수 집 사</div>
+          <div class="name-grid">
+            <div class="name-badge">권오범</div>
+            <div class="name-badge">김성근</div>
+            <div class="name-badge">김은선</div>
+            <div class="name-badge">김정수</div>
+            <div class="name-badge">류정국</div>
+            <div class="name-badge">임봉춘</div>
+            <div class="name-badge">정해신</div>
+            <div class="name-badge">조혁래</div>
+            <div class="name-badge">추연철</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 푸터 -->
+      <div class="footer">
+        <div class="footer-logo">
+          <img
+            src="https://www.jesusvl.org/wp-content/uploads/2018/01/logo_427x156.png"
+            alt="꿈과사랑의교회"
+            style="height: 46px; width: auto"
+            onerror="
+              this.style.display = 'none';
+              document.getElementById('footerTextLogo').style.display = 'block';
+            "
+          />
+          <div
+            id="footerTextLogo"
+            style="
+              display: none;
+              font-family: var(--font-serif);
+              font-size: 21px;
+              font-weight: 600;
+              color: var(--text);
+              letter-spacing: 2px;
+            "
+          >
+            꿈과사랑의교회
+          </div>
+        </div>
+        <div class="footer-divider"></div>
+        <div class="footer-info">
+          담임목사 : 김동진 목사<br />
+          주소 : 경기도 성남시 분당구 발이봉남로 4번길 12<br />
+          연 락 처 : <a href="tel:0317141004" class="footer-phone">031-714-1004</a>
+        </div>
+        <div class="footer-copy">VISION &amp; LOVE CHURCH · 2026</div>
+      </div>
+    </div>
+
+    <!-- 공유 버튼 -->
+    <div class="share-float">
+      <button class="share-btn" onclick="shareInvitation()">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M12 2C6.48 2 2 5.58 2 10c0 2.67 1.49 5.02 3.8 6.54L4.8 20l4.1-1.8c.96.27 1.96.4 3.1.4 5.52 0 10-3.58 10-8S17.52 2 12 2z"
+            fill="#191919"
+          />
+        </svg>
+        초대장 공유하기
+      </button>
+    </div>
+
+    <script>
+      // D-Day
+      (function () {
+        var target = new Date('2026-09-05T11:00:00');
+        var now = new Date();
+        var diff = Math.ceil((target - now) / (1000 * 60 * 60 * 24));
+        var el = document.getElementById('ddayCount');
+        if (!el) return;
+        if (diff > 0) el.textContent = 'D-' + diff;
+        else if (diff === 0) el.textContent = 'D-Day';
+        else el.style.display = 'none';
+      })();
+
+      // 지도 링크
+      (function () {
+        var q = encodeURIComponent('경기도 성남시 분당구 발이봉남로 4번길 12');
+        var kb = document.getElementById('kakaoMapBtn');
+        var nb = document.getElementById('naverMapBtn');
+        var addr = document.getElementById('mapAddressLink');
+        if (kb) kb.href = 'https://map.kakao.com/?q=' + q;
+        if (nb) nb.href = 'https://map.naver.com/v5/search/' + q;
+        if (addr) {
+          addr.href = 'https://map.kakao.com/?q=' + q;
+          addr.target = '_blank';
+        }
+      })();
+
+      // 공유
+      function shareInvitation() {
+        var data = {
+          title: '꿈과사랑의교회 임직식 초대장',
+          text: '2026년 9월 5일(토) 오전 11시 임직식에 초대합니다.',
+          url: window.location.href,
+        };
+        if (navigator.share) {
+          navigator.share(data).catch(function () {});
+        } else {
+          navigator.clipboard
+            .writeText(window.location.href)
+            .then(function () {
+              showToast('링크가 복사되었습니다');
+            })
+            .catch(function () {
+              showToast('주소창의 URL을 복사해 주세요');
+            });
+        }
+      }
+
+      function showToast(msg) {
+        var prev = document.querySelector('.toast');
+        if (prev) prev.remove();
+        var t = document.createElement('div');
+        t.className = 'toast';
+        t.textContent = msg;
+        document.body.appendChild(t);
+        setTimeout(function () {
+          t.remove();
+        }, 2500);
+      }
+    </script>
+  </body>
+</html>
